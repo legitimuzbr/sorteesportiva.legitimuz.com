@@ -19,14 +19,19 @@
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+        .brand {
+          max-width: 120px;
+          width: 100%;
+          white-space: nowrap;
+        }
     </style>
   </head>
-  <body class="d-flex justify-content-center align-items-center">
+  <body class="d-flex justify-content-center align-items-center flex-column">
 
       
     <div class="custom-card text-center">
       
-        <img src="logolegit.svg" alt="Legitimuz" class="img-fluid" width="30%">
+        <img src="logose.png" alt="Sorte Esportiva" class="img-fluid" width="50%">
 
         <h3 class="my-4"> Digite seu CPF: </h3>
         <div class="my-3">
@@ -34,6 +39,15 @@
         </div>
         <button class="btn btn-light w-100 btn-lg" id="legitimuz-action-verify">Iniciar verificação</button>
     </div>
+
+    <div class="brand text-white mt-4 text-center d-flex justify-content-center align-items-center">
+      <small>
+          <span>powered by</span>
+      </small>
+      <img src="logolegit.svg" alt="Legitimuz" class="ms-2 img-fluid align-self-center ml-2">
+  </div>
+  
+  
 
     <div id="legitimuz-root"></div>
     <script src="https://cdn.legitimuz.com/js/sdk/legitimuz-sdk.js"></script>
