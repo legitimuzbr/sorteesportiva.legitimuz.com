@@ -62,7 +62,9 @@
         host: "https://api.legitimuz.com",
         token: "ed8fdfe9-88d0-418b-bc09-ea685282d229",
         onSuccess: (eventName) => {
-          console.log(eventName); // ocr | facematch
+          if (data === "facematch") {
+            setTimeout(() => legitimuz.closeModal(), 5000)
+          }
         },
         onError: (eventName) => {
           console.log(eventName); // ocr | facematch
